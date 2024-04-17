@@ -5,7 +5,7 @@
 <a href="/afiliado/create" class="btn btn-primary">Crear Nuevo Afiliado</a>
 </br>
 </br>
-<table class="table">
+<table class="table container">
     <thead>
         <tr>
             <th>ID</th>
@@ -28,7 +28,7 @@
                 <th>{{$afiliado->ciudad}}</th>
                 <th>{{$afiliado->telefono}}</th>
                 <th>{{$afiliado->edad}}</th>
-                <th>
+                <th class="d-flex gap-2">
                     <a href="/afiliado/{{$afiliado->id}}/edit" class="btn btn-info">Editar</a>
                     <form action="/afiliado/{{$afiliado->id}}" method="POST">
                         @csrf

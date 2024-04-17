@@ -6,7 +6,7 @@
 <a href="/empleado/create" class="btn btn-primary">Crear Nuevo Empleado</a>
 </br>
 </br>
-<table class="table">
+<table class="table container">
     <thead>
         <tr>
             <th>ID</th>
@@ -27,7 +27,7 @@
                 <th>{{$empleado->apellido}}</th>
                 <th>{{$empleado->nivel}}</th>
                 <th>{{$empleado->telefono}}</th>
-                <th>
+                <th class="d-flex gap-3">
                     <a href="/empleado/{{$empleado->id}}/edit" class="btn btn-info">Editar</a>
                     <a href="afiliado/{{$empleado->id}}" class="btn btn-success">Afiliados</a>
                     <form action="/empleado/{{$empleado->id}}" method="POST">

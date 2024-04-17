@@ -27,7 +27,7 @@
     </div>
     <div class="mb-3">
     <label for="">Telefono</label>
-    <input type="text" name="telefono"  class="form-control">
+    <input type="text" max="8" name="telefono"  class="form-control">
     </div>
     <button type = "submit">Guardar</button>
 
